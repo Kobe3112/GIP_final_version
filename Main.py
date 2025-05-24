@@ -1359,7 +1359,7 @@ HP_data["VM_Vitocal_350G_Pro_C075"]["data"] = np.array([
             [0, 55, 2.72, 22900],
             [10, 65, 2.72, 29600],
             [20, 75, 2.62, 30500]])
-HP_data["VM_Vitocal_350G_Pro_C075"]["T_max"] = 45
+HP_data["VM_Vitocal_350G_Pro_C075"]["T_max"] = 35
 
 HP_data["VM_Vitocal_350G_Pro_C210"]["data"] = np.array([
             [0, 35, 3.50, 55000],
@@ -1370,7 +1370,7 @@ HP_data["VM_Vitocal_350G_Pro_C210"]["data"] = np.array([
             [0, 55, 2.64, 60000],
             [10, 65, 2.68, 79000],
             [20, 75, 2.71, 79700]])
-HP_data["VM_Vitocal_350G_Pro_C210"]["T_max"] = 45
+HP_data["VM_Vitocal_350G_Pro_C210"]["T_max"] = 35
 
 # Vitocal 300-G Pro
 
@@ -1383,7 +1383,7 @@ HP_data["VM_Vitocal_300G_Pro_DS090"]["data"] = np.array([
             [10, 45, 4.48, 22950],
             [0, 55, 2.95, 26930],
             [5, 60, 2.89, 30330]])
-HP_data["VM_Vitocal_300G_Pro_DS090"]["T_max"] = 45
+HP_data["VM_Vitocal_300G_Pro_DS090"]["T_max"] = 35
 
 HP_data["VM_Vitocal_300G_Pro_DS230"]["data"] = np.array([
             [0, 25, 5.69, 40300],
@@ -1394,7 +1394,7 @@ HP_data["VM_Vitocal_300G_Pro_DS230"]["data"] = np.array([
             [10, 45, 4.63, 60690],
             [0, 55, 2.98, 70520],
             [5, 60, 2.95, 79120]])
-HP_data["VM_Vitocal_300G_Pro_DS230"]["T_max"] = 45
+HP_data["VM_Vitocal_300G_Pro_DS230"]["T_max"] = 35
 
 # Vitocal 200-G Pro
 
@@ -1407,7 +1407,7 @@ HP_data["VM_Vitocal_200G_Pro_A080"]["data"] = np.array([
             [10, 45, 4.48, 20400],
             [0, 55, 2.91, 23900],
             [5, 60, 2.88, 26500]])
-HP_data["VM_Vitocal_200G_Pro_A080"]["T_max"] = 45
+HP_data["VM_Vitocal_200G_Pro_A080"]["T_max"] = 35
 
 HP_data["VM_Vitocal_200G_Pro_A100"]["data"] = np.array([
             [0, 25, 5.79, 18130],
@@ -1418,7 +1418,7 @@ HP_data["VM_Vitocal_200G_Pro_A100"]["data"] = np.array([
             [10, 45, 4.45, 27380],
             [0, 55, 2.89, 32200],
             [5, 60, 2.85, 35620]])
-HP_data["VM_Vitocal_200G_Pro_A100"]["T_max"] = 45
+HP_data["VM_Vitocal_200G_Pro_A100"]["T_max"] = 35
 
 ## NIBE
 
@@ -1429,14 +1429,14 @@ HP_data["NIBE_F1355_28"]["data"] = np.array([
             [10, 35, 5.60, 4760],
             [0, 45, 3.59, 5540],
             [10, 45, 4.40, 5840]])
-HP_data["NIBE_F1355_28"]["T_max"] = 45
+HP_data["NIBE_F1355_28"]["T_max"] = 35
 
 HP_data["NIBE_F1355_43"]["data"] = np.array([
             [0, 35, 4.38, 7100],
             [10, 35, 5.52, 7330],
             [0, 45, 3.46, 8400],
             [10, 45, 4.31, 8920]])
-HP_data["NIBE_F1355_43"]["T_max"] = 45
+HP_data["NIBE_F1355_43"]["T_max"] = 35
 
 # F1345
 
@@ -1445,7 +1445,7 @@ HP_data["NIBE_F1345_60"]["data"] = np.array([
             [10, 35, 5.19, 15080],
             [0, 45, 3.50, 16020],
             [10, 45, 4.22, 17600]])
-HP_data["NIBE_F1345_60"]["T_max"] = 45
+HP_data["NIBE_F1345_60"]["T_max"] = 35
 
 
 
