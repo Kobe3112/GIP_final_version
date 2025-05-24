@@ -1558,7 +1558,7 @@ percentage_WP10 = 0.70
 bestand = '000-00 Verbruiksgegevens site arenberg.xlsx'
 df = pd.read_excel(bestand, sheet_name='Blad1')
 
-data = 'resultaat_met_interpolatie3.xlsx'
+data = 'buiten_temperaturen.xlsx'
 df_2 = pd.read_excel(data)
 temp_data = df_2.iloc[:, 13].tolist()
 filtered = temp_data[::3]
