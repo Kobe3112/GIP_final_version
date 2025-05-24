@@ -312,50 +312,6 @@ if st.session_state.behouden_grafieken:
         st.rerun()
 
 st.markdown("---")
-col1, col2 = st.columns([1, 3])
-with col1:
-    drukverliezen_check = st.checkbox("Toon drukverliezen")
-with col2:
-    if drukverliezen_check:
-        tijdstempel_drukverlies = pd.date_range(start="2022-01-01 00:00", end="2022-12-31 23:00", freq="H")
-        # Kies dezelfde x-as optie als je andere grafieken
-        x_optie = "Maandstarten"  # of "Max 6 labels", "Kwartaal", "Custom"
-
-        st.markdown("#### Drukverlies over het jaar")
-
-        fig, ax = plt.subplots(figsize=(5, 3))
-        ax.plot(tijdstempel_drukverlies, drukverliezen, label="Drukverlies", linewidth=0.5)
-
-        ax.set_xlim(tijdstempel_drukverlies[0], tijdstempel_drukverlies[-1])
-        ax.set_xlabel("Tijd")
-        ax.set_ylabel("Drukverlies (Pa)")
-        ax.set_title("Drukverlies over tijd")
-        ax.grid(True, which='both', linestyle='--', linewidth=0.5, color='gray')
-        ax.legend(fontsize="small", bbox_to_anchor=(1.05, 1), loc='upper left')
-
-        # === X-as formattering hergebruikt ===
-        if x_as_optie == "Maandstarten":
-            ax.xaxis.set_major_locator(mdates.MonthLocator())
-            ax.xaxis.set_major_formatter(mdates.DateFormatter('%b'))
-        elif x_as_optie == "Max 6 labels":
-            ax.xaxis.set_major_locator(plt.MaxNLocator(6))
-            ax.xaxis.set_major_formatter(mdates.DateFormatter('%d-%m'))
-        elif x_as_optie == "Kwartaal":
-            ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=[1, 4, 7, 10]))
-            ax.xaxis.set_major_formatter(mdates.DateFormatter('%b'))
-        elif x_as_optie == "Custom":
-            custom_ticks = pd.to_datetime(["2024-01-01", "2024-07-01", "2024-12-31"])
-            ax.set_xticks(custom_ticks)
-            ax.set_xticklabels(custom_ticks.strftime("%d-%m"))
-
-        st.pyplot(fig)
-
-        # Optionele download
-        df_drukverlies = pd.DataFrame({
-            "Drukverlies": drukverliezen
-        })
-        csv_druk = df_drukverlies.to_csv(index=False, sep=';', decimal=',', float_format='%.2f')
-        st.download_button(label="Download CSV", data=csv_druk, file_name="pompvermogen.csv", mime="text/csv",key="druk")
 
 col1, col2 = st.columns([1, 3])
 with col1:
