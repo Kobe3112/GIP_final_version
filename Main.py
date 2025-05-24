@@ -1329,7 +1329,8 @@ for wp_id in wp_ids:
     warmtepompen[wp_id]['selected_model'] = globals()[f'selected_model_{wp_id}']
     warmtepompen[wp_id]['delta_T'] = globals()[f'delta_T_{wp_id}']
 
-keuze_simulatie = st.radio('Wat wil je berekenen?', ("Simulatie van een heel jaar","1 steady state oplossing"))
+keuze_simulatie = "Simulatie van een heel jaar"
+#keuze_simulatie = st.radio('Wat wil je berekenen?', ("Simulatie van een heel jaar","1 steady state oplossing"))
 if keuze_simulatie == "Simulatie van een heel jaar":
     keuze_simulatie = 'Simulatie'
 else:
